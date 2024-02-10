@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Decodificar de Texto</title>
+    <link rel="stylesheet" href="style/css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/1942-report-2" rel="stylesheet">
+                
 </head>
 <body>
-    
+    <header>
+        <figure>
+            <img id="alura_logo" src="/assets/logo-alura.svg" alt="Logo da Alura" >
+        </figure>
+        <figure>
+            <img src="/assets/logoAlura.webp" alt="Logo da Oracle Next Education">
+        </figure>
+        <h1>Decodificador de Texto</h1>
+
+    </header>
+
+    <main>
+        <div class="form">
+            <form action="form_mensagem" id="form">
+                <textarea name="textarea_mensagem" id="textarea_mensagem" cols="100" rows="30" placeholder="Digite sua mensagem aqui." maxlength="200"></textarea>
+            </form>
+            <button class=" btn btn__crip" type="button">Criptografar</button>
+            <button class=" btn btn_descrip" type="button">Descriptografar</button>
+            <button class=" btn btn__clean" type="button">Limpar Texto</button>
+        </div>
+        <aside>
+            <textarea id="textarea_result" name="textarea_result" cols="50" rows="50" placeholder="Seu texto sera exibido aqui." disabled></textarea>
+            <button class="btn btn_result" type="button">Copiar texto</button>
+        </aside>
+    </main>
+
+    <footer></footer>
 </body>
+<script src="js/index.js"></script>
 </html>
