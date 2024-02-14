@@ -22,16 +22,13 @@
 
     <main>
         <div class="form">
-            <form action="form_mensagem" id="form">
-                <textarea name="textarea_mensagem" id="textarea_mensagem" cols="100" rows="30" placeholder="Digite sua mensagem aqui." maxlength="200"></textarea>
-            </form>
-            <button class=" btn btn__crip" type="button">Criptografar</button>
-            <button class=" btn btn_descrip" type="button">Descriptografar</button>
-            <button class=" btn btn__clean" type="button">Limpar Texto</button>
+            <textarea name="textarea_mensagem" id="textarea_mensagem" cols="100" rows="18" placeholder="Digite sua mensagem aqui." maxlength="200"></textarea>
+            <button class=" btn btn__crip" type="button" onclick=validarMensagem()>Criptografar</button>
+            <button class=" btn btn_descrip" type="button" onclick=descriptografar()>Descriptografar</button>
         </div>
         <aside>
             <textarea id="textarea_result" name="textarea_result" cols="50" rows="50" placeholder="Seu texto sera exibido aqui." disabled></textarea>
-            <button class="btn btn_result" type="button">Copiar texto</button>
+            <button id="button_copy" class="btn btn_result" type="button" onclick=copiar()>Copiar texto</button>
         </aside>
     </main>
 

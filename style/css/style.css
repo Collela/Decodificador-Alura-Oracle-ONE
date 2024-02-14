@@ -16,6 +16,7 @@ header{
     display: flex;
     justify-content: center;
     width: 70vw;
+    height: 10vh;
 }
 header #alura_logo{
     margin-right: 10px;
@@ -30,26 +31,63 @@ main{
     display: flex;
     justify-content: space-between;
     width: 70vw;
+    height: 80vh;
+    gap: 10px;
 }
-.btn{
-    width: 250px;
-    height: 80px;
-    border-radius: 50px;
-    font-size: 25px;
-    background-color: #0a3871;
-    color: aliceblue;
-    margin-top: 10px;
-    border: none;
+main .form{
+    width: 40vw;
 }
-.btn:hover{
-    background-color: dodgerblue;
+.form #textarea_mensagem{
+    width: 100%;
+    font-size: 2em;
 }
 main aside{
     display: flex;
     flex-direction: column;
+    width: 30vw;
 }
+.btn{
+    width: 150px;
+    height: 80px;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: mediumslateblue;
+    margin-top: 10px;
+    border: none;
+}
+.btn:hover{
+    background-color: blue;
+    color: white;
+}
+
 footer{
     width: 70vw;
+    height: 10vh;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        width: 90vw;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto; 
+        align-items: center;
+        width: 90vw;
+    }
+    main .form {
+        width: 80vw; 
+    }
+    main aside {
+        width: 80vw; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        width: 90vw;
+    }
+}
