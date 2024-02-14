@@ -61,8 +61,14 @@ main aside{
 }
 
 footer{
+    text-align: center;
     width: 70vw;
     height: 10vh;
+
+}
+.footer-content{
+    color: white;
+    margin-top: 15px;
 }
 
 @media screen and (max-width: 768px) {
