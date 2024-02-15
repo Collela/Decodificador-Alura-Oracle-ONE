@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+:root{
+    --font-family-primary: "Protest Riot", sans-serif;
+    --font-weight-primary: 400;
+    --font-style-primary: normal;
+    --primary-color: #121A21;
+    --secondary-color: #FFFFFF;
+    --tertiary-color: #334D66;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 65px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+header .logo__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+    height: 23px;
+}
+.logo__title img{
+    width: 16px;
+    height: 16px;
+}
+.logo__title p{
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-primary);
+    font-style: var(--font-style-primary);
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+header .menu__header{
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .menu{
+    display: flex;
+    gap: 36px;
+    list-style: none;
+}
+nav .menu li {
+    position: relative;
+    float: left;
+}
+nav .menu li:hover{
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-primary);
+    font-style: var(--font-style-primary);
+}
+nav .menu li a{
+    font-size: 21px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+header .dark__light{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+.dark__light figure img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+header .foto_perfil figure img{
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* FIM DO HEADER */
+main{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+.logo__oracle figure{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 90%;
+    border-radius: 50px;
+    background-color: var(--secondary-color);
+}
+.logo__oracle figure img{
+    width: 95px;
+}
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    gap: 20px;
+}
+.container .title{
+    width: 100%;
+    height: 72px;
+    text-align: center;
+}
+.title p{
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-primary);
+    font-style: var(--font-style-primary);
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+.container .textarea{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 5px;
+}
+.textarea label{
+    font-size: 20px;
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-primary);
+    font-style: var(--font-style-primary);
+    color: var(--secondary-color);
+}
+.textarea .mensagem{
+   width: 480px;
+   height: 175px;
+   border-radius: 10px;
+   background-color: var(--tertiary-color);
+   font-size: 18px;
+   color: var(--secondary-color);
+   padding: 10px;
+}
+.container .botoes{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.botoes button{
+    width: 90px;
+    height: 40px;
+    font-size: 21px;
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-primary);
+    font-style: var(--font-style-primary);
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+}
+.botoes button:hover{
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
