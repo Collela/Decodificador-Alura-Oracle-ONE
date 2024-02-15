@@ -54,16 +54,16 @@
             </div>
             <div class="textarea mensagem">
                 <label for="mensagem">Digite ou cole sua mensagem</label>
-                <textarea name="mensagem" class="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                <textarea name="mensagem" class="mensagem" id="textarea_mensagem" cols="30" rows="10"></textarea>
             </div>
             <div class="textarea result">
                 <label for="mensagem">Mensagem processada</label>
-                <textarea name="resultado" class="mensagem resultado" id="resultado" cols="30" rows="10"></textarea>
+                <textarea name="resultado" class="mensagem resultado" id="textarea_result" cols="30" rows="10" disabled></textarea>
             </div>
             <div class="botoes">
-                <button>Copy</button>
-                <button>Encrypt</button>
-                <button>Decrypt</button>
+                <button id="button_copy" type="button" onclick=copiar()>Copy</button>
+                <button type="button" onclick=validarMensagem()>Encrypt</button>
+                <button type="button" onclick=descriptografar()>Decrypt</button>
             </div>
         </div>
     </main>
