@@ -48,3 +48,13 @@ function copiar() {
         }
     });
 }
+
+function showMenu(){
+    const sMenu = document.getElementById('nav__menu');
+    
+    if (sMenu.style.display == 'flex') {
+        sMenu.style.display = 'none';
+    }else{
+        sMenu.style.display = 'flex';
+    }
+}

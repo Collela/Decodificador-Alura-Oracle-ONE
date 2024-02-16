@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypt Master</title>
     <link rel="stylesheet" href="style/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
                 
 </head>
@@ -17,8 +18,9 @@
             <p>CryptMaster</p>
         </div>
         <div class="menu__header">
-            <nav>
-                <ul class="menu">
+            <i id="burguer" class="material-icons" onclick="showMenu()">menu</i>
+            <nav >
+                <ul id="nav__menu" class="menu">
                     <li><a href="">Home</a></li>
                     <li><a href="">Encrypt</a></li>
                     <li><a href="">Decrypt</a></li>
@@ -69,7 +71,7 @@
     </main>
 
     <footer>
-        <div class="container">
+        <div class="container__footer">
             <div class="footer-content">
                 <p>&copy; 2024 Dagmar Collela. Todos os direitos reservados.</p>
                 <p>Projeto desenvolvido para challenge da Alura e Oracle Next Education.</p>
