@@ -58,3 +58,16 @@ function showMenu(){
         sMenu.style.display = 'flex';
     }
 }
+
+const dark = document.getElementById('dark');
+const light = document.getElementById('light');
+
+light.addEventListener('click', () => {
+    document.documentElement.style.setProperty('--primary-color', '#FFFFFF');
+    document.documentElement.style.setProperty('--secondary-color', '#121A21');
+});
+
+dark.addEventListener('click', () => {
+    document.documentElement.style.setProperty('--secondary-color', '#FFFFFF');
+    document.documentElement.style.setProperty('--primary-color', '#121A21');
+});
